@@ -2,9 +2,13 @@
 //App to establish the Pliedes Map using Google Maps API
 
 "use strict";
-
-$(document).ready(function(){
 	
+// Victoria Wellington
+//app to get pictures of seattle city traffic locations and georeference them with google maps
+
+"use strict";
+
+
 $(document).ready(function(){
 	 var mapOptions = {
 	          center: { lat: 47.6, lng: -122.3},
@@ -14,10 +18,4 @@ $(document).ready(function(){
             mapOptions);
 	var info = new google.maps.InfoWindow();
 	var infoWindow = new google.maps.InfoWindow();
-	
-	 );
-
 }) ;
-	
-	
-}
