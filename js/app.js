@@ -4,13 +4,19 @@
 "use strict";
 
 var zoom, coord;
+var purpleDot = "http://maps.google.com/mapfiles/ms/icons/purple-dot.png";
+var greenDot = "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
+var redDot = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+var blueDot = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
 
 $(document).ready(function(){
 	//var rome = new google.maps.LatLng(41.8922,12.4852);
 	//coord = rome;
 	var options = { 
 	  zoom: 7,
-	  center: new google.maps.LatLng(41.8922,12.4852)
+	  //center is critical to put map over Rome. Can change, general area, but otherwise Maps defaults to browser
+	  //location, for which there are no tiles, and it lags as it tries to find files before loading GMaps. 
+	  center: new google.maps.LatLng(41.8922,12.4852) 
 		/*//disableDefaultUI: true,
 		zoomControl: true,
 		center: {lat: -33, lng: 151},
@@ -36,17 +42,19 @@ $(document).ready(function(){
 		minZoom: 3,
 		maxZoom: 11,
 		name: "Imperium"
+		
+		
 	});
 	
-	
-	//setCenter(167717);
 	map.mapTypes.set('imperium', ancientMap);
 	map.setMapTypeId('imperium');
-	//new google.maps.LatLng(41.923, 12.513)
-	//map.setCenter(new google.maps.LatLng(42,12));
-	//map.overlayMapTypes.push(imageMapType);
-	map.panTo(new google.maps.LatLng(41.8922,12.4852))
 
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(41.8922,12.4852),
+		map: map,
+		title: 'Hello World!',
+		icon: purpleDot
+	});
 
 
 	var info = new google.maps.InfoWindow();
