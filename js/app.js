@@ -14,7 +14,8 @@ $(document).ready(function(){
 	  //center is critical to put map over Rome. Can change, general area, but otherwise Maps defaults to browser
 	  //location, for which there are no tiles, and it lags as it tries to find files before loading GMaps. 
 	  center: new google.maps.LatLng(41.8922,12.4852),
-	  disableDefaultUI: true
+	  disableDefaultUI: true //removes sat/terrain/street view, which is modern and has distracting roads
+
 		/*//disableDefaultUI: true,
 		zoomControl: true,
 		center: {lat: -33, lng: 151},
@@ -25,10 +26,10 @@ $(document).ready(function(){
 		//} */
 	}
 	
-	
+	//create a map
 	var map = new google.maps.Map(document.getElementById("map"), options);
 
-	
+	//get map tiles
 	var ancientMap = new google.maps.ImageMapType({
 		getTileUrl: function(coord, zoom){
 			//return 'http://pelagios.dme.ait.ac.at/tilesets/imperium/{z}/{x}/{y}.png';
@@ -47,6 +48,7 @@ $(document).ready(function(){
 	map.mapTypes.set('imperium', ancientMap);
 	map.setMapTypeId('imperium');
 
+	//marker example
 	var marker = new google.maps.Marker({
 		position: new google.maps.LatLng(41.8922,12.4852),
 		map: map,
@@ -54,14 +56,15 @@ $(document).ready(function(){
 		icon: purpleDot
 	});
 
+	//balloon example
 	 var infowindow = new google.maps.InfoWindow({
 		content: "Testing!!!"
 	});
-	
 	marker.addListener('click', function() {
 		infowindow.open(map, marker);
 	});
 	
+	//are these doing anything?
 	google.maps.event.addListener(map, 'tilesloaded', function(){
     document.getElementById('maps').style.position = 'static';
     document.getElementById('maps').style.background = 'none';
