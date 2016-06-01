@@ -52,9 +52,16 @@ $(document).ready(function(){
 		title: 'Hello World!',
 		icon: purpleDot
 	});
-
+$(function() {
+    $( "#map" ).resizable();
+  });
 
 	var info = new google.maps.InfoWindow();
 	var infoWindow = new google.maps.InfoWindow();
+	
+	google.maps.event.addListener(map, 'tilesloaded', function(){
+    document.getElementById('maps').style.position = 'static';
+    document.getElementById('maps').style.background = 'none';
+});
 	
 }) ;
