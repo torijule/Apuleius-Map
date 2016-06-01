@@ -52,12 +52,14 @@ $(document).ready(function(){
 		title: 'Hello World!',
 		icon: purpleDot
 	});
-$(function() {
-    $( "#map" ).resizable();
-  });
 
-	var info = new google.maps.InfoWindow();
-	var infoWindow = new google.maps.InfoWindow();
+	 var infowindow = new google.maps.InfoWindow({
+		content: "Testing!!!"
+	});
+	
+	marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});
 	
 	google.maps.event.addListener(map, 'tilesloaded', function(){
     document.getElementById('maps').style.position = 'static';
