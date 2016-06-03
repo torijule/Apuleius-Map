@@ -66,8 +66,8 @@ $(document).ready(function(){
 	
 	//are these doing anything?
 	google.maps.event.addListener(map, 'tilesloaded', function(){
-    document.getElementById('maps').style.position = 'static';
-    document.getElementById('maps').style.background = 'none';
+   // document.getElementById('maps').style.position = 'static';
+   // document.getElementById('maps').style.background = 'none';
 });
 	
 }) ;
