@@ -1,0 +1,61 @@
+[{
+	"identifier":"http://pleiades.stoa.org/places/423025",
+	"title":"Roma","description":"The capital of the Roman Republic and Empire",
+	"object_type":"Place",
+	"geo_bounds":
+		{"min_lon":12.4843,
+		"max_lon":12.4843,
+		"min_lat":41.8926,
+		"max_lat":41.8926
+	},
+	"names":["Rome","Roma/Rome","Roma","Rom","Ρώμη","Urbs","Rzym","روما","Рим","Romë","罗马市","Ῥώμη","Hrmȝ Hrme"],
+	"matches":["http://dare.ht.lu.se/places/1438","http://gazetteer.dainst.org/place/2323295","http://www.trismegistos.org/place/2058","http://nomisma.org/id/rome"],
+	"snippet":""
+}
+,{
+	"identifier":"http://pleiades.stoa.org/places/540827",
+	"title":"Hypata",
+	"description":"An ancient place, cited: BAtlas 55 C3 Hypata",
+	"object_type":"Place",
+	"geo_bounds":
+		{"min_lon":22.2406,
+		"max_lon":22.2406,
+		"min_lat":38.8718,
+		"max_lat":38.8718
+	},
+	"names":["Hypata","Hypati","Ipata","Hypate","Υπάτη","Ypáti","τὰ Ὕπατα"],
+	"matches":["http://dare.ht.lu.se/places/29360","http://gazetteer.dainst.org/place/2107735","http://www.trismegistos.org/place/12110","http://nomisma.org/id/hypata"],
+	"snippet":""
+}
+,{
+	"identifier":"http://pleiades.stoa.org/places/570380",
+	"title":"Kraneion",
+	"description":"An ancient place, cited: BAtlas 58 D2 Kraneion",
+	"object_type":"Place",
+	"geo_bounds":
+		{"min_lon":22.5,
+		"max_lon":23.0,
+		"min_lat":37.5,
+		"max_lat":38.0
+	},
+	"names":["Kraneion","grove near Corinth"],
+	"snippet":""
+}
+,{
+	"identifier":"1cae11b8e08298ff6193282bebb97c0496ab24ab3f9e253ffbe8971bf1e24506",
+	"title":"Münze des Nero mit Nennung des Hafens von Kenchreai/Cenchreae",
+	"dataset_path":[{"title":"iDAI.objects","id":"502c4308cfa263cad15db4f204e69cef22d0f69f50854a00b75e6dfbeab1c560"}],
+	"homepage":"http://arachne.dainst.org/doc/entity/3646363",
+	"depictions":["http://arachne.dainst.org/data/image/3910014"],
+	"object_type":"Item",
+	"temporal_bounds":{"start":54,"end":68},
+	"geo_bounds":
+		{"min_lon":-0.1257,
+		"max_lon":22.8787,
+		"min_lat":37.906,
+		"max_lat":51.5085},
+		"snippet":""
+}
+
+
+]
