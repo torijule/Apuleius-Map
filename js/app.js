@@ -14,7 +14,7 @@ $(document).ready(function(){
 	  zoom: 6,
 	  //center is critical to put map over Rome. Can change, general area, but otherwise Maps defaults to browser
 	  //location, for which there are no tiles, and it lags as it tries to find files before loading GMaps. 
-	  center: new google.maps.LatLng(37.788,20.8983),
+	  center: new google.maps.LatLng(37.768,20.4983),
 	  disableDefaultUI: true //removes sat/terrain/street view, which is modern and has distracting roads
 
 		/*//disableDefaultUI: true,
