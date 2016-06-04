@@ -1,4 +1,4 @@
-[{
+{"places": [{
 	"identifier":"http://pleiades.stoa.org/places/423025",
 	"title":"Roma","description":"The capital of the Roman Republic and Empire",
 	"object_type":"Place",
@@ -53,9 +53,10 @@
 		{"min_lon":-0.1257,
 		"max_lon":22.8787,
 		"min_lat":37.906,
-		"max_lat":51.5085},
+		"max_lat":51.5085
+	},
 		"snippet":""
 }
 
 
-]
+]}
