@@ -121,7 +121,7 @@ $(document).ready(function(){
 		position: new google.maps.LatLng(37.5,22.5),
 		map: map,
 		title: 'Cenchreae. Temple to Isis. Lucius stops here before heading to Rome.',
-		icon: greenDot
+		icon: blueDot
 	});
 	
 	//indirectStory
@@ -184,7 +184,7 @@ $(document).ready(function(){
 	var Arcadia  = new google.maps.Marker({
 		position: new google.maps.LatLng(35.0803,25.2824),
 		map: map,
-		title: 'Arcadia. Location of the Styx, literary topography from Psyches labors.',
+		title: 'Arcadia. Literary topography from Psyches labors.',
 		icon: greenDot
 	});
 	
